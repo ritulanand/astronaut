@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #ffffff;
+    background-color: #1E1E1E;
+}
+header {
+    background: linear-gradient(135deg, rgba(0,0,0,1),rgba(0,0,0,0.2)),
+    url("../img/sunrise.jpg");
+    background-size: cover;
+      min-height:100vh;
+}
+header nav{
+    padding: 20px 40px 20px 10px;
+    align-items: center;
+
+}
+header nav .nav-right{
+ align-items: center;
+ justify-content: space-between;
+ float: left;
+ width: 50%;
+display: flex;
+padding: 20px 40px 20px 100px;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+header nav .nav-right a{
+ text-decoration: none;   
+ color: #ffffff;
+}
+header nav .logo{
+  width: 20%;
+  float: left;
+}
+header nav .search{
+float: right;
+padding: 20px 80px 10px 60px;
+background-color: #1E1E1E;
+border-radius: 2500px;
+
+}
+.butt{
+    background-color: green;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    color: white;
+}
+.bu{
+    background-color: blue;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    color: white;
+}
+.tu{
+    background-color: red;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 50px;
+    color: white;
+}
+.ani{
+    animation-name: move ;
+    animation-duration: 16s;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+   
+    
+}
+/* .ani{
+    animation-name: rotate;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+   
+    
+} */
+@keyframes move{
+   from{transform: translateX(790px);}
+   to{transform: translateX(-35px);}
+}
+/* @keyframes rotate{
+    from{transform: rotateY(0deg);}
+   to{transform: rotateY(60deg);}
+} */
+.green{
+    height: 50px;
+    translate: -50%;
+    background-color: green;
+}
