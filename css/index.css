@@ -69,14 +69,31 @@ header nav .search > div input{
 header nav .search > div img{
     padding-right: 16px;
 }
-.ani{
-    animation-name: move ;
-    animation-duration: 16s;
-    animation-fill-mode: both;
-    animation-delay: 3s;
-    animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
-   
-    
+
+.social div{
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.social{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-right: 1px solid #1E1E1E;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+}
+.social div:hover{
+    cursor: pointer;
+    background: white;
 }
 /* .ani{
     animation-name: rotate;
