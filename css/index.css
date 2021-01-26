@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: #1E1E1E;
+    font-family: 'Montserrat', sans-serif;
+    height: 3000px;
 }
 header {
     background: linear-gradient(135deg, rgba(0,0,0,1),rgba(0,0,0,0.2)),
@@ -78,22 +80,143 @@ header nav .search > div img{
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  justify-content: center;
+  /* animation: moveIn 1s ease-in-out; */
+}
+@keyframes moveIn{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.astro{
+    position: relative;
 }
 .social{
     position: absolute;
     left: 0;
     top: 0;
-    border-right: 1px solid #1E1E1E;
+    border-right: 1px solid #1d1d1d;
     width: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    min-height: 90vh;
+    min-height: 630px;
 }
 .social div:hover{
     cursor: pointer;
     background: white;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: cal(100vh-80px);
+}
+.content > div{
+    flex: 1;
+}
+.left-section{
+    margin-left: 9px;
+}
+h1{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.ani{
+    animation:moveIn-Space 10s ease-in-out infinite alternate;
+    transform: rotate(20deg);
+}
+@keyframes moveIn-Space{
+    50%{
+        transform: translateY(100px) rotate(-20deg) scale(.7);
+    }
+}
+section.strip{
+    background: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 150px ;
+}
+
+.rocket{
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    grid-gap: 80px;
+    padding: 100px 0;
+}
+.rocket h1{
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.rocket h2{
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.rocket .block .withunderline{
+    position: relative;
+    margin-bottom: 40px;
+}
+.rocket .block .withunderline:before{
+    content: '';
+    left: 0;
+    bottom: -8px;
+    width: 40%;
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: white;
+}
+.rocket .block1 .withunderline{
+    position: relative;
+    margin-bottom: 40px;
+}
+.rocket .block1 .withunderline:before{
+    content: '';
+    left: 0;
+    bottom: -8px;
+    width: 40%;
+    display: block;
+    height: 2px;
+    position: absolute;
+    background: white;
+}
+.rocket .block1 h1{
+    padding-top: 24px ;
+}
+.rocket p{
+    line-height: 1.7;
+}
+.rocket .payload{
+    padding-top: 130px;
+}
+.rocket .payload h2{
+    padding-left: 80px;
+}
+.learn{
+    padding-top: 24px;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+footer ul a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer ul {
+    list-style-type: none;
 }
 /* .ani{
     animation-name: rotate;
@@ -103,10 +226,10 @@ header nav .search > div img{
    
     
 } */
-@keyframes move{
+/* @keyframes move{
    from{transform: translateX(790px);}
    to{transform: translateX(-35px);}
-}
+} */
 /* @keyframes rotate{
     from{transform: rotateY(0deg);}
    to{transform: rotateY(60deg);}
