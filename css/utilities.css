@@ -1,0 +1,35 @@
+.btn{
+    padding: 8px 30px;
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-main:hover{
+ background: transparent;
+ color: #ffffff;
+ border: 1px solid #ffffff;
+ transition: all .2s ease-in-out;
+}
+.container{
+    width: 1460px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.btn1 {
+    padding: 8px 30px;
+    border-radius: 50px;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all .2s ease-in-out;
+}
+.btn1-main:hover{
+       border: 1px solid white;;
+       cursor: pointer;
+       background: #ffffff;
+       color: #121212;
+}
